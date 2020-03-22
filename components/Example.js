@@ -1,11 +1,23 @@
 import './style.css'
-export default () => (
-    <div className="corpo">
-        <h1>Hello World! </h1>
-        <h2>I announce that I`m here!</h2>
-        <p>here some tips to enjoy your weekend!</p>
-        <p>novo parágrafo. blablabla </p>
-        <a target="_blank" href="https://www.xprog.com.br">Clique aqui!</a>
-        <img src="https://www.yesmagazine.org/wp-content/uploads/imports/97c16c71e4ac4236bc5058d63a667663.png"></img>
-    </div>
+
+const SectionHome = () => (
+	<div className="capa">
+		<img className="logo" src="/images/logo.png" />
+		<h1>AUTODIAGNÓSTICO DE FORNECEDOR</h1>
+		<h2> TRANSPORTADORAS	</h2>
+		<h2>Ciclo 2020</h2>
+		<img className="fabrica"src="/images/fabrica.png" />
+	</div>
 )
+
+const SectionSummary = () => (
+	<div>summary</div>
+)
+
+export default () => (
+	<div>
+		<SectionHome />
+		<SectionSummary />
+	</div>	
+)
+
